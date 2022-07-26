@@ -42,5 +42,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  router: {
+    base: '/mountain-road'
+  },
+  generate: {
+    dir: 'docs',
+    subFolder: false,
   }
 }
