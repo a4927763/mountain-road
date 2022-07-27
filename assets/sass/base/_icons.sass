@@ -1,0 +1,32 @@
+.i
+    position: relative
+    font-size: 0
+    &::before,
+    &::after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+
+.i-cart
+    &::before
+        width: 20px
+        height: 20px
+        background: url("~static/images/icon/icon-cart.svg") no-repeat center / 100% auto
+        
+.i-like
+    &::before
+        width: 20px
+        height: 20px
+        background: url("~static/images/icon/icon-like.svg") no-repeat center / 100% auto
+
+.i-member
+    &::before
+        width: 20px
+        height: 20px
+        background: url("~static/images/icon/icon-member.svg") no-repeat center / 100% auto
+
+.i-search
+    &::before
+        width: 20px
+        height: 20px
+        background: url("~static/images/icon/icon-search.svg") no-repeat center / 100% auto
