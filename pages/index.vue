@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.home
-    color: white
+// .home
+//     color: white
 
 </style>

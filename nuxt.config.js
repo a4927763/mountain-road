@@ -39,6 +39,9 @@ export default {
         {
             src: "@/plugins/vue-select.js",
         },
+        {   
+            src: "@/plugins/vendor/aos/aos.client.js" 
+        },
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components

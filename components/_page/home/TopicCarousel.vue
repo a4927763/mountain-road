@@ -1,7 +1,8 @@
 <template>
     <div class="topic-section relative">
         <div class="container">
-            <div class="relative">
+            <SectionTitle text="熱門主題"/>
+            <div class="relative mt-[26px]">
                 <client-only>
                     <div ref="topic-carousel"
                         class="swiper"
@@ -16,7 +17,7 @@
                                         <img :src="item.url" alt="">      
                                     </div>
                                     <div class="card__title-block">
-                                        <p>title</p>
+                                        title
                                     </div>              
                                 </div>
                             </div>
@@ -35,12 +36,16 @@
 </template>
 
 <script>
+import SectionTitle from "~/components/_shared/title/SectionTitle.vue";
+
 import Swiper from "swiper/swiper-bundle.min";
 import "swiper/swiper-bundle.min.css";
 
 export default {
     name: 'TopicCarousel',
-
+    components: {
+        SectionTitle
+    },
     data() {
         return {
             mySwiper: null,
@@ -111,8 +116,10 @@ export default {
 <style lang="sass" scoped>
 .swiper 
     min-height: 520px
+    max-height: 520px
 .swiper-wrapper
     min-height: 520px
+    max-height: 520px
 
 .swiper-btn
     position: absolute
@@ -125,10 +132,13 @@ export default {
         right: 25px
 .swiper-slide-active
     .card__img
-        padding-bottom: 133.76% !important
+        padding-bottom: 129.3% !important
 
 .topic-section
     background-image: url(~/static/images/others/home-topic-bg.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
     padding: 40px 0 70px
     ::v-deep(.swiper-wrapper)
         align-items: center

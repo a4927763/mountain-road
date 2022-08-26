@@ -66,7 +66,6 @@ export default {
         background: url("~static/images/icon/icon-go-top.svg") center center no-repeat
         background-size: auto
         background-position: center
-        
     @screen md
         width: 40px
         height: 40px

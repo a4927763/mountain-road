@@ -1,6 +1,9 @@
 <template>
     <div class="article-page">
         <div class="container">
+            <div class="mb-7">
+                <SectionTitle text="精選文章" />
+            </div>
             <div class="grid grid-cols-3 gap-6">
                 <div 
                     class="card" 
@@ -45,7 +48,12 @@
 </template>
 
 <script>
+import SectionTitle from "~/components/_shared/title/SectionTitle.vue";
+
 export default {
+    components: {
+        SectionTitle
+    },
     data() {
         return {
             list: [

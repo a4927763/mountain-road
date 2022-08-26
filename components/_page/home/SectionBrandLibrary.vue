@@ -1,8 +1,8 @@
 <template>
     <div class="brand-page">
         <div class="container">
-            <div>
-                <h4 class="text-black">品牌旗艦館</h4>
+            <div class="mb-7">
+                <SectionTitle text="品牌旗艦館" />
             </div>
 
             <div class="grid grid-cols-5 gap-6 mb-[54px]">
@@ -22,8 +22,13 @@
 </template>
 
 <script>
+import SectionTitle from "~/components/_shared/title/SectionTitle.vue";
+
 export default {
     name: 'SectionBrandLibrary',
+    components: {
+        SectionTitle
+    },
     data() {
         return {
             brands: [
@@ -33,7 +38,7 @@ export default {
                 },
                 {
                     name: "NANGA",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: "https://fakeimg.pl/100x250/",
                 },
                 {
                     name: "Fjallraven 瑞典北極狐",
@@ -57,7 +62,7 @@ export default {
                 },
                 {
                     name: "MSR",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: "https://fakeimg.pl/250x250/",
                 },
                 {
                     name: "Darn Tough ",
@@ -81,14 +86,14 @@ export default {
     &__img
         position: relative
         width: 100%
-        height: 0
-        padding-bottom: 100%
+        height: calc(100% - 35px)
         img
-            position: absolute
             width: 100%
             height: 100%
-            object-fit: cover
+            max-height: 176px
+            object-fit: contain
     &__text
         color: black
         text-align: center
+        margin-top: 10px
 </style>

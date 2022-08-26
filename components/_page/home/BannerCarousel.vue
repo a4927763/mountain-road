@@ -146,13 +146,11 @@ export default {
     background: #FFFFFF
     ::v-deep(.swiper-pagination-progressbar-fill)
         background: linear-gradient(270deg, #207D92 -3.72%, #A0EDFF 100%) !important
-
-
-
 .client-swiper
     position: relative
     background-size: cover
     background-position: center
+    color: $white
     &-info
         width: 100%
         height: 100vh
