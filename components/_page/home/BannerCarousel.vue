@@ -4,8 +4,8 @@
             <div class="container">
                 <div class="client-swiper-info">
                     <div class="client-swiper__left-side">
-                        <h1>{{activeItem.title}}</h1>
-                        <p>{{activeItem.description}}</p>
+                        <h1 class="mb-[5px]">{{activeItem.title}}</h1>
+                        <h4 class="mb-9">{{activeItem.description}}</h4>
                         <button class="btn btn-primary">
                             立即探索
                         </button>
