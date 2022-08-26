@@ -1,14 +1,16 @@
 <template>
     <div>
-        search
+        <TopBanner/>
     </div>
 </template>
 
 <script>
-
+import TopBanner from '~/components/_page/search/TopBanner.vue'
 
 export default {
-    components: {}
+    components: {
+        TopBanner
+    }
 }
 </script>
 
