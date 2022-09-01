@@ -2,8 +2,8 @@
     <div class="input-email">
         <label v-show="label" 
             :for="id" 
-            class="text-700 pb-1" 
-            v-html="label" 
+            class="pb-2 tx-h6" 
+            v-html="label"
         />
         <input 
             type="email"

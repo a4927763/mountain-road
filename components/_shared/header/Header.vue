@@ -58,7 +58,7 @@ export default {
     // background-image: url('~/static/images/others/header-bg.jpg')
     background-image: url(~/static/images/others/header-bg.jpg)
     color: white
-
+    // display: none
 
 
 </style>

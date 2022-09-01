@@ -7,39 +7,45 @@
             <img src="~/static/images/logo/logo-footer.png" alt="" />
             </div>
             <ul class="footer__main__nav">
-            <li class="nav-col">
-                <nuxt-link to="/" class="nav-col__tag"> 關於我們 </nuxt-link>
-                <p class="mt-4">品牌介紹</p>
-                <p>品牌介紹</p>
-                <p>品牌介紹</p>
-            </li>
-            <li class="nav-col">
-                <nuxt-link to="/" class="nav-col__tag"> 山野商城 </nuxt-link>
-                <p class="mt-4">商品資訊</p>
-                <p>品牌代理</p>
-                <p>購物須知</p>
-                <p>常見問題</p>
-            </li>
-            <li class="nav-col">
-                <div class="nav-col__tag inline">追蹤山野一路</div>
+            <li class="nav-col ">
                 <div>
-                    <div class="mt-4">
+                    <nuxt-link to="/" class="nav-col__tag">關於我們</nuxt-link>
+                </div>
+                <p class="mt-[13px] px-4">品牌介紹</p>
+                <p class="mt-[5px] px-4">服務條款</p>
+                <p class="mt-[5px] px-4">隱私政策</p>
+            </li>
+            <li class="nav-col nav-col-store">
+                <nuxt-link to="/" class="nav-col__tag">山野商城</nuxt-link>
+                <p class="mt-[13px] px-4">商品資訊</p>
+                <p class="mt-[5px] px-4">品牌代理</p>
+                <p class="mt-[5px] px-4">購物須知</p>
+                <p class="mt-[5px] px-4">常見問題</p>
+            </li>
+            <li class="nav-col">
+                <div class="nav-col__tag">追蹤山野一路</div>
+                <div>
+                    <div class="my-[13px] px-4">
                         <span class="i i-facebook"></span>
                         <span class="i i-instagram"></span>
                         <span class="i i-youtube"></span>
                     </div>
-                    <p>客服時間：每日11:00~18:00</p>
-                    <p>客服信箱：service@mtwild-elu.com.tw</p>
+                    <p class="mt-[5px] px-4">客服時間：每日11:00~18:00</p>
+                    <p class="mt-[5px] px-4">客服信箱：service@mtwild-elu.com.tw</p>
                 </div>
             </li>
             <li class="nav-col">
-                <div class="nav-col__tag inline">訂閱電子報</div>
+                <div class="nav-col__tag">訂閱電子報</div>
                 <div class="mt-4">
                     <InputFooterEmail />
                 </div>
-                <div class="flex">
-                    <img src="~/static/images/logo/footer-apple-store.png" alt="">
-                    <img src="~/static/images/logo/footer-android-google.png" alt="">
+                <div class="flex mt-4">
+                    <a href="/">
+                        <img class="mr-2" src="~/static/images/logo/footer-apple-store.svg" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="~/static/images/logo/footer-android-google.svg" alt="">
+                    </a>
                 </div>
             </li>
             </ul>
@@ -73,22 +79,51 @@ export default {
         background-position: center
         background-size: cover
         padding: 44px 0
+        @screen md
+            padding: 30px 0
     &__main
         display: flex
         // padding: 60px
         justify-content: space-between
-        align-items: center
+        // align-items: center
+        @screen lg
+            flex-direction: row-reverse
+        @screen md
+            flex-direction: column        
+        &__logo
+            margin-right: 15px
+            img
+                width: 175px
+                @screen md
+                    width: 70px
+
         &__nav
             display: flex
-            justify-content: center
+            justify-content: space-between
+            flex-wrap: wrap
+            flex: 0 1 auto
+            @media (max-width: 940px) 
+                justify-content: flex-start
+            // @screen lg
+            //     flex-direction: column
+            // .nav-col-store
+                    // width: 50%
             .nav-col
+                margin-top: 10px
                 margin-right: 20px
+                font-weight: bold
                 &:last-child
                     margin-right: 0
+                p
+                    font-weight: bold
+
                 &__tag
+                    display: block
                     background: #207D92
                     border-radius: 5px
                     color: white
-                    padding: 4px 16px
-                    margin-bottom: 16px
+                    padding: 0px 16px
+                    height: 35px
+                    width: fit-content
+                    line-height: 35px
 </style>

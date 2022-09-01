@@ -2,7 +2,7 @@
     <div class="input-text">
         <label v-show="label" 
             :for="id" 
-            class="text-700 pb-1" 
+            class="pb-2 tx-h6" 
             v-html="label" 
         />
         <input 
@@ -63,5 +63,7 @@ export default {
         box-shadow: 0px 0px 3.65161px rgba(0, 0, 0, 0.25)
         border-radius: 4.56452px
 
+::v-deep(.require)
+    color: red
 
 </style>

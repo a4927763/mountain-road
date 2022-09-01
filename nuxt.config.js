@@ -32,10 +32,6 @@ export default {
         {
             src: "@/plugins/vueScreen.js",
         },
-        // { 
-        //     src: '@/plugins/vue-awesome-swiper.js', 
-        //     mode: 'client' 
-        // },
         {
             src: "@/plugins/vue-select.js",
         },
@@ -65,6 +61,7 @@ export default {
     styleResources: {
         sass: [
             "~assets/sass/abstracts/_variables.sass",
+            "~assets/sass/abstracts/_text.sass",
         ]
     },
 

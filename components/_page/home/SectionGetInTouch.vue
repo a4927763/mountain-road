@@ -16,7 +16,7 @@
                     <div class="form">
                         <div class="mb-5">
                             <InputText 
-                                :label="'姓名'" 
+                                :label="`姓名<span class='require'>*</span>`" 
                                 :id="'name'"
                                 :value="name"
                             />
@@ -24,21 +24,21 @@
                         </div>
                         <div class="mb-5">
                             <InputText 
-                                :label="'電話'" 
+                                :label="`電話<span class='require'>*</span>`" 
                                 :id="'phone'"
                                 :value="phone"
                             />
                         </div>
                         <div class="mb-5">
                             <InputText 
-                                :label="'信箱'" 
+                                :label="`信箱<span class='require'>*</span>`" 
                                 :id="'email'"
                                 :value="email"
                             />
                         </div>  
                         <div class="mb-12">
                             <InputTextArea 
-                                :label="'詢問內容'" 
+                                :label="`詢問內容<span class='require'>*</span>`" 
                                 :id="'textArea'" 
                                 :value="textArea"
                             />
@@ -92,10 +92,12 @@ export default {
         justify-content: center
         align-items: center
         padding: 60px 0
+        
     &__left
         text-align: center
         padding: 30px
         max-width: 615px
+        width: 50%
         &__title
             margin-bottom: 25px
             h4
@@ -109,7 +111,9 @@ export default {
         &__content
             color: #727987
             margin-bottom: 25px
-
+    &__right
+        width: 50%
+        
 .form
     color: black
     background-color: #fff
