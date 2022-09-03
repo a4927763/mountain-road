@@ -52,12 +52,15 @@ export default {
     buildModules: [
         // Doc: https://vueuse.org/guide/
         "@vueuse/nuxt",
+
+        "@nuxt/postcss8",
+
         // Doc: https://github.com/nuxt-community/style-resources-module
         '@nuxtjs/style-resources',
 
-        'nuxt-purgecss',
-
         "@nuxtjs/svg",
+        // Doc: https://purgecss.com/guides/nuxt.html
+        // 'nuxt-purgecss',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -70,13 +73,15 @@ export default {
             "~assets/sass/abstracts/_text.sass",
         ]
     },
-    tailwindcss: {
-        configPath: '~/tailwind.config.js',
-        cssPath: '~/assets/sass/index.css',
-    },
-    purgeCSS: {
-        mode: 'postcss'
-    },
+    // tailwindcss: {
+    //     configPath: '~/tailwind.config.js',
+    //     cssPath: '~/assets/sass/index.css',
+    // },
+
+    // purgeCSS: {
+    // //     mode: 'postcss'
+    // },
+    
     router: {
         base: '/mountain-road'
     },

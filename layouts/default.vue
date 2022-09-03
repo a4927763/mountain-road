@@ -17,6 +17,8 @@ import Header from "~/components/_shared/header/Header.vue";
 import Footer from "~/components/_shared/footer/Footer.vue";
 import ScrollBtn from "~/components/_shared/ScrollBtn.vue";
 
+
+
 export default {
     components: {
         Header,
