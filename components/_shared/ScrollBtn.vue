@@ -26,23 +26,28 @@ export default {
     },
     methods: {
         scrollHandler() {
-            if (this.dir === "down") {
-                if (this.targetId) {
-                    top = document.getElementById(this.targetId).offsetTop;
-                }
-                window.scrollTo({
-                    top: 500,
-                    behavior: 'smooth'
-                }, 800);
-            } else {
-                if (this.targetId) {
-                    top = document.getElementById(this.targetId).getBoundingClientRect().top;
-                }
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                }, 1000);
-            }
+            console.log('scrollHandler')
+            window.scroll({
+                top: 0,
+                behavior: 'smooth'
+            }, 1000);
+            // if (this.dir === "down") {
+            //     if (this.targetId) {
+            //         top = document.getElementById(this.targetId).offsetTop;
+            //     }
+            //     window.scroll({
+            //         top: 500,
+            //         behavior: 'smooth'
+            //     }, 800);
+            // } else {
+            //     if (this.targetId) {
+            //         top = document.getElementById(this.targetId).getBoundingClientRect().top;
+            //     }
+            //     window.scroll({
+            //         top: 0,
+            //         behavior: 'smooth'
+            //     }, 1000);
+            // }
         },
     },
 };

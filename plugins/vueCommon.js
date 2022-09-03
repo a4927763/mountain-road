@@ -3,9 +3,12 @@
 */
 
 import Vue from 'vue';
-
+import { vElementVisibility } from "@vueuse/components";
 
 const vueCommon = {
+    directives: {
+        elementVisibility: vElementVisibility,
+    },
     computed: {
         $_detectOS() {
             if (process.client) {

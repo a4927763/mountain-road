@@ -24,8 +24,8 @@
                 </nav>
             </div>
             <div class="flex items-center justify-end gap-1 lg:flex-1">
+                <input type="text" name="" id="">
                 <div class="">
-                    <input type="text" name="" id="">
                     <span class="i i-search"></span>
                 </div>
                 <div class="">

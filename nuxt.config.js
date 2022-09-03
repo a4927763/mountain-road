@@ -9,14 +9,19 @@ export default {
         lang: 'en'
         },
         meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: '' },
-        { name: 'format-detection', content: 'telephone=no' }
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            { hid: 'description', name: 'description', content: '' },
+            { name: 'format-detection', content: 'telephone=no' }
+        ],
+        script: [
+            {
+                src: "https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js",
+            },
         ],
         link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-        ]
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
@@ -45,35 +50,33 @@ export default {
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
-        // https://go.nuxtjs.dev/tailwindcss
-        '@nuxtjs/tailwindcss',
+        // Doc: https://vueuse.org/guide/
+        "@vueuse/nuxt",
         // Doc: https://github.com/nuxt-community/style-resources-module
         '@nuxtjs/style-resources',
 
-        'nuxt-purgecss'
+        'nuxt-purgecss',
+
+        "@nuxtjs/svg",
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         // 'nuxt-purgecss'
     ],
-
     styleResources: {
         sass: [
             "~assets/sass/abstracts/_variables.sass",
             "~assets/sass/abstracts/_text.sass",
         ]
     },
-
     tailwindcss: {
         configPath: '~/tailwind.config.js',
         cssPath: '~/assets/sass/index.css',
     },
-
     purgeCSS: {
         mode: 'postcss'
     },
-
     router: {
         base: '/mountain-road'
     },
@@ -81,5 +84,23 @@ export default {
         dir: 'docs',
         subFolder: false,
     },
+    build:{
+        extend(config) {
+            config.module.rules.push({
+                test: /\.mjs$/,
+                include: /node_modules/,
+                type: "javascript/auto",
+            });
+        },
+        postcss: {
+            plugins: {
+                tailwindcss: {},
+                autoprefixer: {},
+                // Doc: https://www.npmjs.com/package/postcss-easings
+                "postcss-easings": {},
+            },
+        }
+
+    }
    
 }

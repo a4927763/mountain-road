@@ -58,41 +58,36 @@ export default {
             focusIndex: 0,
             bannerList: [
                 {
-                    url: 'https://picsum.photos/200/300?random=1',
+                    url: require('~/static/images/dummy/home/banner-1.jpg'),
                     id: 1,
-                    title: '111 BORN TO BE WILD',
-                    description: '111 Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
+                    title: 'BORN TO BE WILD',
+                    description: 'Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=2',
+                    url: require('~/static/images/dummy/home/banner-2.jpg'),
                     id: 2,
-                    title: '222 BORN TO BE WILD',
-                    description: '222 Outdoor專業程及登山、露一起走進大自然，探索山林之美！',      
+                    title: '2 BORN TO BE WILD',
+                    description: '2 Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=3',
+                    url: require('~/static/images/dummy/home/banner-3.jpg'),
                     id: 3,
                     title: '333 BORN TO BE WILD',
-                    description: '333 Outdoor專業備，跟我們一起走進大自然，探索山林之美！',      
+                    description: '3 Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=4',
+                    url: require('~/static/images/dummy/home/banner-4.jpg'),
                     id: 4,
                     title: '444 BORN TO BE WILD',
-                    description: 'Outdoor專業動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
+                    description: '4 Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=5',
+                    url: require('~/static/images/dummy/home/banner-5.jpg'),
                     id: 5,
                     title: '555 BORN TO BE WILD',
-                    description: '5555 5 5 5',      
+                    description: '5 Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
                 },
-                {
-                    url: 'https://picsum.photos/200/300?random=6',
-                    id: 6,
-                    title: '666 BORN TO BE WILD',
-                    description: '666 Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
-                },
+       
             ]
         }
     },
