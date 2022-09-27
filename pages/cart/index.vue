@@ -1,14 +1,17 @@
 <template>
     <div>
-        cart
+        <TopCarousel/>
     </div>
 </template>
 
 <script>
+import TopCarousel from '~/components/_page/cart/TopCarousel.vue'
 
 
 export default {
-    components: {}
+    components: {
+        TopCarousel
+    }
 }
 </script>
 
