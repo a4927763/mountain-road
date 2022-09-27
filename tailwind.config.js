@@ -34,6 +34,10 @@ module.exports = {
                     "100%": { opacity: 1, transform: "translateY(0)" },
                 },
             },
+            colors: {
+                'green': '#207D92',
+                'gray': '#727987'
+            },
         }
 
     },

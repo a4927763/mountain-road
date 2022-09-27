@@ -58,7 +58,6 @@
 
 <script>
 import InputText from '~/components/_shared/input/InputText.vue'
-import InputSelect from '~/components/_shared/input/InputSelect.vue'
 import InputEmail from '~/components/_shared/input/InputEmail.vue'
 import InputTextArea from '~/components/_shared/input/InputTextArea.vue'
 
@@ -66,7 +65,6 @@ import InputTextArea from '~/components/_shared/input/InputTextArea.vue'
 export default {
     components: {
         InputText,
-        InputSelect,
         InputEmail,
         InputTextArea,
     },

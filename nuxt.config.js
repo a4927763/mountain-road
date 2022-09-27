@@ -29,6 +29,7 @@ export default {
         "~/assets/sass/index.sass",
     ],
 
+
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
         {
@@ -52,20 +53,21 @@ export default {
     buildModules: [
         // Doc: https://vueuse.org/guide/
         "@vueuse/nuxt",
-
+        // Doc: https://tailwindcss.com/
         "@nuxt/postcss8",
-
-        // Doc: https://github.com/nuxt-community/style-resources-module
-        '@nuxtjs/style-resources',
-
+        // Doc: https://www.npmjs.com/package/@nuxtjs/svg
         "@nuxtjs/svg",
-        // Doc: https://purgecss.com/guides/nuxt.html
-        // 'nuxt-purgecss',
+
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
-        // 'nuxt-purgecss'
+        // Doc: https://github.com/nuxt-community/style-resources-module
+        "@nuxtjs/style-resources",
+        // Doc: https://axios.nuxtjs.org/setup
+        "@nuxtjs/axios",
+        // Doc: https://image.nuxtjs.org/
+        "@nuxt/image",
     ],
     styleResources: {
         sass: [
@@ -73,15 +75,6 @@ export default {
             "~assets/sass/abstracts/_text.sass",
         ]
     },
-    // tailwindcss: {
-    //     configPath: '~/tailwind.config.js',
-    //     cssPath: '~/assets/sass/index.css',
-    // },
-
-    // purgeCSS: {
-    // //     mode: 'postcss'
-    // },
-    
     router: {
         base: '/mountain-road'
     },
