@@ -119,9 +119,8 @@ export default {
 <style lang="sass" scoped>
 @mixin text-line-height
     p
-        line-height: 40px
-        @screen sm
-            line-height: 32px
+        line-height: 32px
+
 .pages-list
     height: 40px
     @screen sm
@@ -132,15 +131,12 @@ export default {
     .page-ellipsis 
         @include text-line-height
 
-
     .page-ellipsis, .page-item
-        width: 40px
-        height: 40px
+        width: 32px
+        height: 32px
         color: $black-2
         @include text-line-height
-        @screen sm
-            width: 32px
-            height: 32px
+
 
 
     .page-item, .page-arrow
