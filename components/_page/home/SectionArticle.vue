@@ -4,45 +4,10 @@
             <div class="mb-7">
                 <SectionTitle text="精選文章" />
             </div>
-            <div class="grid grid-cols-3 gap-6 mb-[54px]">
-                <div 
-                    class="card" 
-                    v-for="item in list" 
-                    :key="item.id"
-                >
-                    <div>
-                        <div class="card__img">
-                            <img :src="item.url" alt="">
-                        </div>
-    
-                        <div class="card__text">
-                            <h5 class="mb-1">{{item.title}}</h5>
-                            <p class="line-clamp-5">{{item.des}}</p>
-                            <div class="card__text__more-btn">more</div>
-                        </div>
-                    </div>
-
-                    <div class="card__footer">
-                        <div class="card__footer__author">
-                            <div class="card__footer__author__profile mr-2">
-                                <img :src="item.author_url" alt="">
-                            </div>
-                            <p>{{item.author}}</p>
-                        </div>
-                        <div class="card__footer__date">
-                            <span class="i i-time-circle mr-2"></span>
-                            <p>{{item.date}}</p>
-                        </div>
-                        <div class="card__footer__like">
-                            <span class="i i-heart mr-2"></span>
-                            收藏
-                        </div>
-                         <div class="card__footer__share">
-                            <span class="i i-share mr-2"></span>
-                            分享
-                        </div>
-                    </div>
-                </div>
+            <div class="grid grid-cols-3 gap-8 mb-[54px]">
+                <ArticleCard/>
+                <ArticleCard/>
+                <ArticleCard/>
             </div>
             
              <div class="mx-auto w-min">
@@ -54,10 +19,12 @@
 
 <script>
 import SectionTitle from "~/components/_shared/title/SectionTitle.vue";
+import ArticleCard from "~/components/_shared/card/ArticleCard.vue";
 
 export default {
     components: {
-        SectionTitle
+        SectionTitle,
+        ArticleCard
     },
     data() {
         return {
@@ -169,7 +136,6 @@ export default {
             margin-right: 5px
             align-items: center
         &__share  
-
             display: flex
             align-items: center
 

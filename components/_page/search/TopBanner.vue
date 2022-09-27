@@ -142,16 +142,13 @@ export default {
         border: 1px solid #207D92
         border-top: none
         border-radius: 0 0 5px 5px
-
         li
             font-weight: bold
             line-height: 1.5
             font-size: 14px
             padding: 15px 15px !important
             color: #8F8F93
-            &:hover
-                // color: white
-                // background-color: #207D92
+
     .vs__dropdown-option
         &--highlight
             color: white !important
@@ -160,9 +157,6 @@ export default {
     .vs__dropdown-toggle
         border: 1px solid #207D92 !important
     
-
-
-
 .banner
     background-image: url(~/static/images/others/search-banner.jpg)
     background-repeat: no-repeat
