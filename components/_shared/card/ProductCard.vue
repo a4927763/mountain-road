@@ -5,19 +5,14 @@
                 <img src="https://fakeimg.pl/250x100/">
             </div>
             <div class="card__main">
-                <h6 class="mb-[6px]">【百岳入門】奇萊南華｜黃金大草原 兩天一夜</h6>
-                <div class="flex justify-between mb-[10px]">
-                    <h6 class="mb-[6px] text-green">NT$5000</h6>
-                    <div class="flex items-center">
-                        <span class="i i-location-green"></span>
-                        <p class="tx-body-2 ml-[6px] text-green !font-bold">
-                            南投
-                        </p>
-                    </div>
+                <p class="tx-body-2 !font-bold">HILLEBERG 瑞典</p>
+                <p class="tx-body-3 !font-bold text-[#8F8F93]">Nallo 2 GT 紅標 輕量二人帳篷</p>
+                <div class="flex justify-between">
+                    <h6>NT$5000</h6>
                 </div>
             </div>
         </div>
-        <div class="card__footer">
+        <div class="card__footer mt-[10px]">
             <button type="button" class="card__footer__cart-text">加入購物車</button>
             <button type="button" class="card__footer__like-btn">
                 <span class="i i-heart-green"></span>
@@ -98,5 +93,4 @@ export default {
                     &::before
                         background: url("~static/images/icon/icon-heart-white.svg") no-repeat center / 100% auto
     
-
 </style>

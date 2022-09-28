@@ -60,7 +60,7 @@ export default {
     flex-direction: column
     input
         box-shadow: 0px 0px 3.65161px rgba(0, 0, 0, 0.25)
-        border-radius: 4.56452px
+        border-radius: 5px
 
 
 </style>

@@ -11,6 +11,7 @@
             :value="value"
             v-bind="$attrs"
             @input="$emit('input', $event.target.value)"
+            :placeholder="placeholder"
         >
 
         <div
@@ -36,6 +37,10 @@ export default {
             type: [String, Number],
             default: () => "",
         },
+        placeholder: {
+            default: '',
+            type: String
+        },
 
         // error //
         isError: {
@@ -46,6 +51,7 @@ export default {
             type: String,
             default: () => "",
         },
+        
     },
     computed: {
         defaultErrorMsg() {
@@ -61,7 +67,8 @@ export default {
     flex-direction: column
     input
         box-shadow: 0px 0px 3.65161px rgba(0, 0, 0, 0.25)
-        border-radius: 4.56452px
+        border-radius: 5px
+        
 
 ::v-deep(.require)
     color: red
