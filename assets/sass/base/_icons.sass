@@ -132,3 +132,37 @@
         width: 20px
         height: 20px
         background: url("~static/images/icon/icon-chevron-up.svg") no-repeat center / 100% auto
+
+
+.i-ribbon-star
+    &::before
+        width: 23.82px
+        height: 23px
+        background: url("~static/images/icon/icon-ribbon-star.svg") no-repeat center / 100% auto
+    &-active
+        &::before
+            background: url("~static/images/icon/icon-ribbon-star-green.svg") no-repeat center / 100% auto
+
+@mixin iconList($url)
+    &::before
+        width: 34px
+        height: 34px
+        background: url($url) no-repeat center / 100% auto
+
+.i-baggagelist
+    @include iconList("~static/images/icon/icon-baggagelist.svg")
+.i-heart-solid
+    @include iconList("~static/images/icon/icon-heart-solid.svg")
+.i-logout
+    @include iconList("~static/images/icon/icon-logout.svg")
+.i-montain
+    @include iconList("~static/images/icon/icon-montain.svg")
+.i-member-info
+    @include iconList("~static/images/icon/icon-member-info.svg")
+.i-order
+    @include iconList("~static/images/icon/icon-order.svg")
+.i-security-checked
+    @include iconList("~static/images/icon/icon-security-checked.svg")
+.i-setting
+    @include iconList("~static/images/icon/icon-setting.svg")
+

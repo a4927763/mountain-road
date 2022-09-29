@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer" ref="footer">
     <div class="footer__bg">
       <div class="container h-full">
         <div class="footer__main h-full">
@@ -64,14 +64,21 @@ import InputFooterEmail from '~/components/_shared/input/InputFooterEmail.vue'
 export default {
     components: { 
         InputFooterEmail
+    },
+    mounted() {
+        this.$nextTick(()=> {
+            let footerHeight = this.$refs.footer.clientHeight
+            let root = document.documentElement;
+            root.style.setProperty("--footerHeight", `${footerHeight}px`);
+        })
     }
 };
 </script>
 
 <style lang="sass">
 .footer
-    margin-top: 50px
-    margin-bottom: 25px
+    padding-top: 50px
+    padding-bottom: 25px
     &__bg
         background-image: url(~/static/images/others/footer-banner.jpg)
         min-height: 270px

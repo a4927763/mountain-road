@@ -1,5 +1,5 @@
 <template>
-    <header class="header">
+    <header class="header" ref="header">
         <div class="flex items-center h-full px-1 mx-auto max-w-7xl sm:px-3 lg:px-6">
             <div class="flex items-center flex-1 justify-start">
                 <a href="/">
@@ -44,21 +44,19 @@
 
 <script>
 export default {
-    data() {
-        return {
-
-        }
+    mounted() {
+        this.$nextTick(()=> {
+            let headerHeight = this.$refs.header.clientHeight
+            let root = document.documentElement;
+            root.style.setProperty("--headerHeight", `${headerHeight}px`);
+        })
     }
-
 }
 </script>
 
 <style lang="sass" scoped>
 .header
-    // background-image: url('~/static/images/others/header-bg.jpg')
     background-image: url(~/static/images/others/header-bg.jpg)
     color: white
-    // display: none
-
-
+    height: 100%
 </style>
