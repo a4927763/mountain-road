@@ -138,7 +138,7 @@ export default {
         border-radius: 5px
 
     .vs__dropdown-menu
-        top: calc(100% - 4px)
+        top: calc(100% - 4px) !important
         border: 1px solid #207D92
         border-top: none
         border-radius: 0 0 5px 5px

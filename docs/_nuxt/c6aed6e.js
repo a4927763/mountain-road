@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{411:function(t,n,o){"use strict";o.r(n);var e={props:{options:{type:Array,default:[]}}},r=o(27),component=Object(r.a)(e,(function(){var t=this._self._c;return t("div",[t("v-select",{attrs:{options:this.options}})],1)}),[],!1,null,null,null);n.default=component.exports}}]);

@@ -136,7 +136,7 @@ export default {
     display: none
 .swiper-pagination-progressbar
     position: absolute
-    top: calc(100% - 4px)
+    top: calc(100% - 4px) !important
     border-radius: 10px
     background: #FFFFFF
     ::v-deep(.swiper-pagination-progressbar-fill)
