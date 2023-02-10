@@ -14,6 +14,7 @@ export default {
     background-repeat: no-repeat
     background-size: cover
     background-position: center center
+    background-attachment: fixed
     height: 592px
     width: 100%
     display: flex

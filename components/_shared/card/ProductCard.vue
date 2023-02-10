@@ -1,30 +1,36 @@
 <template>
+  <nuxt-link to="/cart/cartDetail">
     <div class="card">
-        <div class="card__top">
-            <div class="card__img mb-[10px]">
-                <img src="https://fakeimg.pl/250x100/">
-            </div>
-            <div class="card__main">
-                <p class="tx-body-2 !font-bold">HILLEBERG 瑞典</p>
-                <p class="tx-body-3 !font-bold text-[#8F8F93]">Nallo 2 GT 紅標 輕量二人帳篷</p>
-                <div class="flex justify-between">
-                    <h6>NT$5000</h6>
-                </div>
-            </div>
+      <div class="card__top">
+        <div class="card__img mb-[10px]">
+          <img src="https://fakeimg.pl/250x100/" />
         </div>
-        <div class="card__footer mt-[10px]">
-            <button type="button" class="card__footer__cart-text">加入購物車</button>
-            <button type="button" class="card__footer__like-btn">
-                <span class="i i-heart-green"></span>
-            </button>
+        <div class="card__main">
+          <p class="tx-body-2 !font-bold">HILLEBERG 瑞典</p>
+          <p class="tx-body-3 !font-bold text-[#8F8F93]">
+            Nallo 2 GT 紅標 輕量二人帳篷
+          </p>
+          <div class="flex justify-between">
+            <h6>NT$5000</h6>
+          </div>
         </div>
+      </div>
+      <div class="card__footer mt-[10px]">
+        <button type="button" class="card__footer__cart-text">
+          加入購物車
+        </button>
+        <button type="button" class="card__footer__like-btn">
+          <span class="i i-heart-green"></span>
+        </button>
+      </div>
     </div>
+  </nuxt-link>
 </template>
 
 <script>
 export default {
-    name: 'activityCard',
-}
+  name: "activityCard",
+};
 </script>
 
 <style lang="sass" scoped>
@@ -42,7 +48,7 @@ export default {
             width: 105%
             height: 105%
             top: -2.5%
-        
+
     &__img
         width: 100%
         height: 0
@@ -74,7 +80,7 @@ export default {
             &:hover
                 color: white
                 background-color: $primary
-                
+
         &__like-btn
             display: flex
             justify-content: center
@@ -92,5 +98,4 @@ export default {
                 .i-heart-green
                     &::before
                         background: url("~static/images/icon/icon-heart-white.svg") no-repeat center / 100% auto
-    
 </style>

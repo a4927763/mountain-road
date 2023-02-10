@@ -1,44 +1,49 @@
 <template>
-    <div class="card" >
-        <div>
-            <div class="card__img">
-                <img src="https://fakeimg.pl/250x100/" alt="">
-            </div>
-
-            <div class="card__text">
-                <h5 class="mb-1">【登山知識】參加登山團前你該知道的事 撤退只能靠自己！</h5>
-                <p class="line-clamp-5">對新手而言，我們到底要怎樣選擇路線、選擇適合自己的團體呢？因為登山社團的發達，大家常常看到高手在放百岳大景美圖，看著看著也會想去，很像唾手可得，但這些路線真的適合自己嗎，看著看著也會想去，很像唾手可得，但這些路線真的適？</p>
-            </div>
+  <nuxt-link to="/cart/cartDetail">
+    <div class="card">
+      <div>
+        <div class="card__img">
+          <img src="https://fakeimg.pl/250x100/" alt="" />
         </div>
 
-        <div class="card__footer">
-            <div class="card__footer__author">
-                <div class="card__footer__author__profile mr-2">
-                    <img src="https://fakeimg.pl/250x100/" alt="">
-                </div>
-                <p>Rita Yang</p>
-            </div>
-            <div class="card__footer__date">
-                <span class="i i-time-circle mr-2"></span>
-                <p>2022/05/27</p>
-            </div>
-            <div class="card__footer__like">
-                <span class="i i-heart mr-2"></span>
-                收藏
-            </div>
-                <div class="card__footer__share">
-                <span class="i i-share mr-2"></span>
-                分享
-            </div>
+        <div class="card__text">
+          <h5 class="mb-1">
+            【登山知識】參加登山團前你該知道的事 撤退只能靠自己！
+          </h5>
+          <p class="line-clamp-5">
+            對新手而言，我們到底要怎樣選擇路線、選擇適合自己的團體呢？因為登山社團的發達，大家常常看到高手在放百岳大景美圖，看著看著也會想去，很像唾手可得，但這些路線真的適合自己嗎，看著看著也會想去，很像唾手可得，但這些路線真的適？
+          </p>
         </div>
+      </div>
+
+      <div class="card__footer">
+        <div class="card__footer__author">
+          <div class="card__footer__author__profile mr-2">
+            <img src="https://fakeimg.pl/250x100/" alt="" />
+          </div>
+          <p>Rita Yang</p>
+        </div>
+        <div class="card__footer__date">
+          <span class="i i-time-circle mr-2"></span>
+          <p>2022/05/27</p>
+        </div>
+        <div class="card__footer__like">
+          <span class="i i-heart mr-2"></span>
+          收藏
+        </div>
+        <div class="card__footer__share">
+          <span class="i i-share mr-2"></span>
+          分享
+        </div>
+      </div>
     </div>
+  </nuxt-link>
 </template>
 
 <script>
-
 export default {
-    name: 'ArticleCard'
-}
+  name: "ArticleCard",
+};
 </script>
 
 <style lang="sass" scoped>
@@ -66,7 +71,7 @@ export default {
             height: 100%
             object-fit: cover
     &__text
-        padding: 20.5px 20.5px 17px 
+        padding: 20.5px 20.5px 17px
 
     &__footer
         display: flex
@@ -86,7 +91,7 @@ export default {
                 height: 19.25px
                 border-radius: 50%
                 overflow: hidden
-            
+
                 img
                     width: 100%
                     height: 100%
@@ -96,12 +101,11 @@ export default {
             align-items: center
             margin-right: 5px
 
-        &__like        
+        &__like
             display: flex
             margin-right: 5px
             align-items: center
-        &__share  
+        &__share
             display: flex
             align-items: center
-
 </style>

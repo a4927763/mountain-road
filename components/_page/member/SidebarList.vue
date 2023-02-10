@@ -14,9 +14,10 @@
         </div>
         <ul class="sidebar__list">
             <li 
-                v-for="item in sidebarList" 
+                v-for="(item, index) in sidebarList" 
                 class="sidebar__list__item"
                 :key="item.routerLink"
+                @click="onClickList(item.linkId)"
             >
                 <span class="i" :class="item.icon"></span>
                 <h6 class="ml-3">{{item.name}}</h6>
@@ -93,6 +94,11 @@ export default {
         },
         levelUnbind() {
             return 5 - this.personalInfo.level
+        }
+    },
+    methods: {
+        onClickList(linkId) {
+            this.$emit('changePage', linkId)
         }
     }
 }

@@ -10,7 +10,7 @@
             :id="id" 
             cols="30" 
             rows="6"
-            placeholder="Enter something..."
+            :placeholder="placeholder"
         ></textarea>
         <div
             class="text-danger pt-1"
@@ -34,6 +34,10 @@ export default {
         value: {
             type: [String, Number],
             default: () => "",
+        },
+        placeholder: {
+            default: '',
+            type: String
         },
 
         // error //

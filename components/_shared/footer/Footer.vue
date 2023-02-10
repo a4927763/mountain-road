@@ -86,6 +86,7 @@ export default {
         background-position: center
         background-size: cover
         padding: 44px 0
+        background-attachment: fixed
         @screen md
             padding: 30px 0
     &__main

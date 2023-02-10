@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="page">
-            <SidebarList/>
+            <SidebarList @changePage="changePage"/>
             <component 
                 :is='showPage' 
             ></component>
@@ -53,13 +53,19 @@ export default {
                 default: return PersonalInfo
             }
         },
-    }
+    },
+    methods: {
+        changePage(id) {
+            this.pageIndex = id
+        }
+    },
 }
 </script>
 
 <style lang="sass" scoped>
 .page
     display: flex
+    justify-content: center
     padding-top: 50px
     min-height: calc((var(--vh, 1vh) * 100) - var(--footerHeight) - var(--headerHeight) )
 </style>

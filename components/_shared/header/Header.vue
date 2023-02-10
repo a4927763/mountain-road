@@ -24,18 +24,23 @@
                 </nav>
             </div>
             <div class="flex items-center justify-end gap-1 lg:flex-1">
-                <input type="text" name="" id="">
-                <div class="">
-                    <span class="i i-search"></span>
+                <div class="relative mr-6">
+                    <input class="w-[150px] bg-[#ffffff3d] rounded-[20px] py-3 pl-[18px] pr-[38px]" type="text" name="" id="">
+                    <div class="absolute top-[6px] right-[12px]">
+                        <span class="i i-search"></span>
+                    </div>
                 </div>
-                <div class="">
+                <div class="mr-6 pb-1">
                     <span class="i i-cart"></span>
                 </div>
-                <div class="">
+                <div class="mr-6 pb-1">
                     <span class="i i-like"></span>
                 </div>
-                <div class="">
-                    <span class="i i-member"></span>
+                <div class="pb-1">
+                    <nuxt-link to="/member">
+                        <span class="i i-member"></span>
+
+                    </nuxt-link>
                 </div>
             </div>
         </div>
@@ -57,6 +62,8 @@ export default {
 <style lang="sass" scoped>
 .header
     background-image: url(~/static/images/others/header-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
     color: white
     height: 100%
 </style>

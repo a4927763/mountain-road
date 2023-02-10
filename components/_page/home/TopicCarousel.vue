@@ -139,6 +139,7 @@ export default {
     background-repeat: no-repeat
     background-position: center
     background-size: cover
+    background-attachment: fixed
     padding: 40px 0 70px
     ::v-deep(.swiper-wrapper)
         align-items: center

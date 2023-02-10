@@ -1,7 +1,7 @@
 <template>
     <div class="page">
         <div class="page__banner">
-            <img src="~/static/images/others/contact-us-banner.jpg" alt="">
+            <!-- <img src="~/static/images/others/contact-us-banner.jpg" alt=""> -->
         </div>
         <div class="page__main">
             <div class="page__main__form">
@@ -100,10 +100,15 @@ export default {
         width: 100%
         top: 0
         left: 0
-        img
-            width: 100%
-            height: 592px
-            object-fit: cover
+        background-image: url(~/static/images/others/contact-us-banner.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        background-attachment: fixed
+        height: 592px
+        // img
+        //     width: 100%
+        //     object-fit: cover
             
     &__main
         position: relative
