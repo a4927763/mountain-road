@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{568:function(n,e,r){"use strict";r.r(e);var t={name:"OrderCenter"},c=r(25),component=Object(c.a)(t,(function(){return(0,this._self._c)("div",[this._v("\n    OrderCenter\n")])}),[],!1,null,"22abc0fa",null);e.default=component.exports}}]);
