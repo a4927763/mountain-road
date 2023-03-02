@@ -3,7 +3,7 @@
     <div class="card">
       <div>
         <div class="card__img">
-          <img src="https://fakeimg.pl/250x100/" alt="" />
+          <img src="~/static/images/dummy/cart/article-img-1.jpg" alt="" />
         </div>
 
         <div class="card__text">
@@ -19,20 +19,20 @@
       <div class="card__footer">
         <div class="card__footer__author">
           <div class="card__footer__author__profile mr-2">
-            <img src="https://fakeimg.pl/250x100/" alt="" />
+            <img src="~/static/images/dummy/cart/photo-sticker.jpg" alt="" />
           </div>
           <p>Rita Yang</p>
         </div>
         <div class="card__footer__date">
-          <span class="i i-time-circle mr-2"></span>
+          <span class="i i-time-circle mr-2 pt-[3px]"></span>
           <p>2022/05/27</p>
         </div>
         <div class="card__footer__like">
-          <span class="i i-heart mr-2"></span>
+          <span class="i i-heart mr-2 pt-[3px]"></span>
           收藏
         </div>
         <div class="card__footer__share">
-          <span class="i i-share mr-2"></span>
+          <span class="i i-share mr-2 pt-[3px]"></span>
           分享
         </div>
       </div>
@@ -70,6 +70,7 @@ export default {
             width: 100%
             height: 100%
             object-fit: cover
+
     &__text
         padding: 20.5px 20.5px 17px
 
@@ -87,11 +88,11 @@ export default {
             align-items: center
             margin-right: 5px
             &__profile
+                margin-top: 3px
                 width: 19.25px
                 height: 19.25px
                 border-radius: 50%
                 overflow: hidden
-
                 img
                     width: 100%
                     height: 100%

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{620:function(e,n,t){"use strict";t.r(n);var o={name:"MemberLogout"},r=t(23),component=Object(r.a)(o,(function(){return(0,this._self._c)("div",[this._v("\n    MemberLogout\n")])}),[],!1,null,"2ea829da",null);n.default=component.exports}}]);

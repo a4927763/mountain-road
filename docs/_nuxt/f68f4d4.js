@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{617:function(n,e,t){"use strict";t.r(e);var r={name:"PrepareList"},c=t(23),component=Object(c.a)(r,(function(){return(0,this._self._c)("div",[this._v("\n    PrepareList\n")])}),[],!1,null,"7167b8f8",null);e.default=component.exports}}]);

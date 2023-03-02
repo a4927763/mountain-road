@@ -1,12 +1,12 @@
 <template>
     <div class="container">
         <div class="grid grid-cols-3 gap-10 mb-[58px]">
-            <ActivityCard/>
-            <ActivityCard/>
-            <ActivityCard/>
-            <ActivityCard/>
-            <ActivityCard/>
-            <ActivityCard/>
+            <ActivityCard img="article-img-1"/>
+            <ActivityCard img="article-img-2"/>
+            <ActivityCard img="article-img-3"/>
+            <ActivityCard img="article-img-1"/>
+            <ActivityCard img="article-img-2"/>
+            <ActivityCard img="article-img-3"/>
         </div>
         <div>
             <PageList :totalPage="totalPage" :currentPage="currentPage" @changePage="changePage"/>

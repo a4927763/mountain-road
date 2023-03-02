@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card__top">
         <div class="card__img mb-[10px]">
-          <img src="https://fakeimg.pl/250x100/" />
+            <img :src="require(`~/static/images/dummy/cart/${img}.jpg`)" alt="" />
         </div>
         <div class="card__main">
           <h6 class="mb-[6px]">【百岳入門】奇萊南華｜黃金大草原 兩天一夜</h6>
@@ -31,6 +31,12 @@
 <script>
 export default {
   name: "activityCard",
+  props: {
+    img: {
+        type: String,
+        default: () => "article-img-1",
+    } 
+  }
 };
 </script>
 

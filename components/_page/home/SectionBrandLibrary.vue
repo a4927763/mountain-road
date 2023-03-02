@@ -33,44 +33,44 @@ export default {
         return {
             brands: [
                 {
-                    name: "Arc'teryx 始祖鳥",
-                    url: "https://fakeimg.pl/250x100/",
+                    name: "Arc'teryx 始祖鳥", 
+                    url: require("~/static/images/dummy/home/brands/arc-teryx.png"),
                 },
                 {
                     name: "NANGA",
-                    url: "https://fakeimg.pl/100x250/",
+                    url: require("~/static/images/dummy/home/brands/nanga.png"), 
                 },
                 {
                     name: "Fjallraven 瑞典北極狐",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: require("~/static/images/dummy/home/brands/fjallraven.png"), 
                 },
                 {
                     name: "Mystery Ranch 神秘農場",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: require("~/static/images/dummy/home/brands/mystery-ranch.png"), 
                 },
                 {
                     name: "Mammut 長毛象",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: require("~/static/images/dummy/home/brands/mammut.png"), 
                 },
                 {
                     name: "Hilleberg",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: require("~/static/images/dummy/home/brands/hilleberg.png"), 
                 },
                 {
                     name: "patagonia",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: require("~/static/images/dummy/home/brands/patagonia.png"), 
                 },
                 {
                     name: "MSR",
-                    url: "https://fakeimg.pl/250x250/",
+                    url: require("~/static/images/dummy/home/brands/msr.png"), 
                 },
                 {
                     name: "Darn Tough ",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: require("~/static/images/dummy/home/brands/darn-tough.png"), 
                 },
                 {
                     name: "Hanwag",
-                    url: "https://fakeimg.pl/250x100/",
+                    url: require("~/static/images/dummy/home/brands/hanwag.png"), 
                 },
             ]
         }
