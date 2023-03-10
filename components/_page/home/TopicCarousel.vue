@@ -51,37 +51,37 @@ export default {
             mySwiper: null,
             bannerList: [
                 {
-                    url: 'https://picsum.photos/200/300?random=1',
+                    url: require("~/static/images/dummy/home/topic-1.jpg"),
                     id: 1,
                     title: '111 BORN TO BE WILD',
                     description: '111 Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=2',
+                    url: require("~/static/images/dummy/home/topic-2.jpg"),
                     id: 2,
                     title: '222 BORN TO BE WILD',
                     description: '222 Outdoor專業程及登山、露一起走進大自然，探索山林之美！',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=3',
+                    url: require("~/static/images/dummy/home/topic-3.jpg"),
                     id: 3,
                     title: '333 BORN TO BE WILD',
                     description: '333 Outdoor專業備，跟我們一起走進大自然，探索山林之美！',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=4',
+                    url: require("~/static/images/dummy/home/topic-1.jpg"),
                     id: 4,
                     title: '444 BORN TO BE WILD',
                     description: 'Outdoor專業動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=5',
+                    url: require("~/static/images/dummy/home/topic-2.jpg"),
                     id: 5,
                     title: '555 BORN TO BE WILD',
                     description: '5555 5 5 5',      
                 },
                 {
-                    url: 'https://picsum.photos/200/300?random=6',
+                    url: require("~/static/images/dummy/home/topic-3.jpg"),
                     id: 6,
                     title: '666 BORN TO BE WILD',
                     description: '666 Outdoor專業選物店，提供各式戶外活動行程及登山、露營配備，跟我們一起走進大自然，探索山林之美！',      
@@ -133,6 +133,8 @@ export default {
 .swiper-slide-active
     .card__img
         padding-bottom: 129.3% !important
+    .card__title-block
+        opacity: 1 !important
 
 .topic-section
     background-image: url(~/static/images/others/home-topic-bg.jpg)
@@ -145,14 +147,14 @@ export default {
         align-items: center
     .card
         position: relative
-        width: 100%
+        width: 80%
         border-radius: 5.3px
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25)
+        margin: auto
         &__img
             width: 100%
             height: 0
             padding-bottom: 108.69% 
-            // padding-bottom: 133.76% 
             position: relative
             transition: all 0.3s
             img
@@ -170,4 +172,6 @@ export default {
             height: 54px
             line-height: 54px
             text-align: center
+            opacity: 0
+            transition: all 0.3s
 </style>

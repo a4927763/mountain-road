@@ -162,6 +162,7 @@ export default {
         position: relative
     &__left-side
         width: 50%
+        margin-bottom: 140px
 
     &-wrapper
         position: absolute
